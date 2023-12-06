@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="russian_cosmeticDataSet" targetNamespace="http://tempuri.org/russian_cosmeticDataSet.xsd" xmlns:mstns="http://tempuri.org/russian_cosmeticDataSet.xsd" xmlns="http://tempuri.org/russian_cosmeticDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="russian_cosmeticConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="russian_cosmeticConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.RussianCosmeticApp.Properties.Settings.GlobalReference.Default.russian_cosmeticConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ordersTableAdapter" GeneratorDataComponentClassName="ordersTableAdapter" Name="orders" UserDataComponentName="ordersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="russian_cosmeticConnectionString (Settings)" DbObjectName="russian_cosmetic.orders" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `order_id`, `data_create`, `status`, `duration`, `client`, `removed` FROM `orders`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="servicesTableAdapter" GeneratorDataComponentClassName="servicesTableAdapter" Name="services" UserDataComponentName="servicesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="russian_cosmeticConnectionString (Settings)" DbObjectName="russian_cosmetic.services" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `service_id`, `service_title`, `price`, `duration`, `std` FROM `services`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="statusesTableAdapter" GeneratorDataComponentClassName="statusesTableAdapter" Name="statuses" UserDataComponentName="statusesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="russian_cosmeticConnectionString (Settings)" DbObjectName="russian_cosmetic.statuses" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `status_id`, `status_title` FROM `statuses`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="russian_cosmeticDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="russian_cosmeticDataSet" msprop:Generator_UserDSName="russian_cosmeticDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="orders" msprop:Generator_TableClassName="ordersDataTable" msprop:Generator_TableVarName="tableorders" msprop:Generator_TablePropName="orders" msprop:Generator_RowDeletingName="ordersRowDeleting" msprop:Generator_RowChangingName="ordersRowChanging" msprop:Generator_RowEvHandlerName="ordersRowChangeEventHandler" msprop:Generator_RowDeletedName="ordersRowDeleted" msprop:Generator_UserTableName="orders" msprop:Generator_RowChangedName="ordersRowChanged" msprop:Generator_RowEvArgName="ordersRowChangeEvent" msprop:Generator_RowClassName="ordersRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="services" msprop:Generator_TableClassName="servicesDataTable" msprop:Generator_TableVarName="tableservices" msprop:Generator_TablePropName="services" msprop:Generator_RowDeletingName="servicesRowDeleting" msprop:Generator_RowChangingName="servicesRowChanging" msprop:Generator_RowEvHandlerName="servicesRowChangeEventHandler" msprop:Generator_RowDeletedName="servicesRowDeleted" msprop:Generator_UserTableName="services" msprop:Generator_RowChangedName="servicesRowChanged" msprop:Generator_RowEvArgName="servicesRowChangeEvent" msprop:Generator_RowClassName="servicesRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="statuses" msprop:Generator_TableClassName="statusesDataTable" msprop:Generator_TableVarName="tablestatuses" msprop:Generator_TablePropName="statuses" msprop:Generator_RowDeletingName="statusesRowDeleting" msprop:Generator_RowChangingName="statusesRowChanging" msprop:Generator_RowEvHandlerName="statusesRowChangeEventHandler" msprop:Generator_RowDeletedName="statusesRowDeleted" msprop:Generator_UserTableName="statuses" msprop:Generator_RowChangedName="statusesRowChanged" msprop:Generator_RowEvArgName="statusesRowChangeEvent" msprop:Generator_RowClassName="statusesRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
