@@ -34,6 +34,10 @@ namespace RussianCosmeticApp
             this.OrderIdTextBox = new System.Windows.Forms.MaskedTextBox();
             this.servicesGroupBox = new System.Windows.Forms.GroupBox();
             this.servicesGridView = new System.Windows.Forms.DataGridView();
+            this.ColumnServiceCheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.ColumnServiceTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnServicePrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnServiceDuration = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.totalDurationTextBox = new System.Windows.Forms.TextBox();
@@ -41,15 +45,11 @@ namespace RussianCosmeticApp
             this.ResetOrderButton = new System.Windows.Forms.Button();
             this.SaveOrderButton = new System.Windows.Forms.Button();
             this.ClientGroupBox = new System.Windows.Forms.GroupBox();
-            this.phisClientRadioButton = new System.Windows.Forms.RadioButton();
-            this.urClientRadioButton = new System.Windows.Forms.RadioButton();
-            this.clientComboBox = new System.Windows.Forms.ComboBox();
+            this.clientInfoLabel = new System.Windows.Forms.Label();
             this.addClientButton = new System.Windows.Forms.Button();
-            this.clinetInfoLabel = new System.Windows.Forms.Label();
-            this.ColumnServiceCheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.ColumnServiceTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnServicePrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnServiceDuration = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientComboBox = new System.Windows.Forms.ComboBox();
+            this.urClientRadioButton = new System.Windows.Forms.RadioButton();
+            this.phisClientRadioButton = new System.Windows.Forms.RadioButton();
             this.serviceSourceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.servicesGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.servicesGridView)).BeginInit();
@@ -113,6 +113,42 @@ namespace RussianCosmeticApp
             this.servicesGridView.Size = new System.Drawing.Size(680, 177);
             this.servicesGridView.TabIndex = 0;
             this.servicesGridView.CurrentCellDirtyStateChanged += new System.EventHandler(this.servicesGridView_CurrentCellDirtyStateChanged);
+            // 
+            // ColumnServiceCheckBox
+            // 
+            this.ColumnServiceCheckBox.DataPropertyName = "selected";
+            this.ColumnServiceCheckBox.Frozen = true;
+            this.ColumnServiceCheckBox.HeaderText = "";
+            this.ColumnServiceCheckBox.Name = "ColumnServiceCheckBox";
+            this.ColumnServiceCheckBox.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnServiceCheckBox.Width = 20;
+            // 
+            // ColumnServiceTitle
+            // 
+            this.ColumnServiceTitle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ColumnServiceTitle.DataPropertyName = "title";
+            this.ColumnServiceTitle.HeaderText = "Наименование";
+            this.ColumnServiceTitle.Name = "ColumnServiceTitle";
+            this.ColumnServiceTitle.ReadOnly = true;
+            this.ColumnServiceTitle.Width = 132;
+            // 
+            // ColumnServicePrice
+            // 
+            this.ColumnServicePrice.DataPropertyName = "price";
+            this.ColumnServicePrice.HeaderText = "Стоимость, руб.";
+            this.ColumnServicePrice.MinimumWidth = 150;
+            this.ColumnServicePrice.Name = "ColumnServicePrice";
+            this.ColumnServicePrice.ReadOnly = true;
+            this.ColumnServicePrice.Width = 150;
+            // 
+            // ColumnServiceDuration
+            // 
+            this.ColumnServiceDuration.DataPropertyName = "duration";
+            this.ColumnServiceDuration.HeaderText = "Длительность, ч";
+            this.ColumnServiceDuration.MinimumWidth = 150;
+            this.ColumnServiceDuration.Name = "ColumnServiceDuration";
+            this.ColumnServiceDuration.ReadOnly = true;
+            this.ColumnServiceDuration.Width = 150;
             // 
             // label2
             // 
@@ -191,7 +227,7 @@ namespace RussianCosmeticApp
             // 
             // ClientGroupBox
             // 
-            this.ClientGroupBox.Controls.Add(this.clinetInfoLabel);
+            this.ClientGroupBox.Controls.Add(this.clientInfoLabel);
             this.ClientGroupBox.Controls.Add(this.addClientButton);
             this.ClientGroupBox.Controls.Add(this.clientComboBox);
             this.ClientGroupBox.Controls.Add(this.urClientRadioButton);
@@ -202,6 +238,53 @@ namespace RussianCosmeticApp
             this.ClientGroupBox.TabIndex = 11;
             this.ClientGroupBox.TabStop = false;
             this.ClientGroupBox.Text = "Клиент";
+            // 
+            // clientInfoLabel
+            // 
+            this.clientInfoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.clientInfoLabel.Location = new System.Drawing.Point(7, 70);
+            this.clientInfoLabel.Name = "clientInfoLabel";
+            this.clientInfoLabel.Size = new System.Drawing.Size(668, 77);
+            this.clientInfoLabel.TabIndex = 4;
+            this.clientInfoLabel.Text = "Информация о клиенте";
+            // 
+            // addClientButton
+            // 
+            this.addClientButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addClientButton.Location = new System.Drawing.Point(637, 23);
+            this.addClientButton.Name = "addClientButton";
+            this.addClientButton.Size = new System.Drawing.Size(38, 33);
+            this.addClientButton.TabIndex = 3;
+            this.addClientButton.Text = "+";
+            this.addClientButton.UseVisualStyleBackColor = true;
+            this.addClientButton.Click += new System.EventHandler(this.addClientButton_Click);
+            // 
+            // clientComboBox
+            // 
+            this.clientComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.clientComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.clientComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.clientComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.clientComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.clientComboBox.FormattingEnabled = true;
+            this.clientComboBox.Location = new System.Drawing.Point(184, 29);
+            this.clientComboBox.Name = "clientComboBox";
+            this.clientComboBox.Size = new System.Drawing.Size(447, 24);
+            this.clientComboBox.TabIndex = 2;
+            this.clientComboBox.SelectedIndexChanged += new System.EventHandler(this.clientComboBox_SelectedIndexChanged);
+            // 
+            // urClientRadioButton
+            // 
+            this.urClientRadioButton.AutoSize = true;
+            this.urClientRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.urClientRadioButton.Location = new System.Drawing.Point(7, 43);
+            this.urClientRadioButton.Name = "urClientRadioButton";
+            this.urClientRadioButton.Size = new System.Drawing.Size(149, 20);
+            this.urClientRadioButton.TabIndex = 1;
+            this.urClientRadioButton.Text = "юридическое лицо";
+            this.urClientRadioButton.UseVisualStyleBackColor = true;
+            this.urClientRadioButton.CheckedChanged += new System.EventHandler(this.phisClientRadioButton_CheckedChanged);
             // 
             // phisClientRadioButton
             // 
@@ -215,83 +298,7 @@ namespace RussianCosmeticApp
             this.phisClientRadioButton.TabStop = true;
             this.phisClientRadioButton.Text = "физическое лицо";
             this.phisClientRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // urClientRadioButton
-            // 
-            this.urClientRadioButton.AutoSize = true;
-            this.urClientRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.urClientRadioButton.Location = new System.Drawing.Point(7, 43);
-            this.urClientRadioButton.Name = "urClientRadioButton";
-            this.urClientRadioButton.Size = new System.Drawing.Size(149, 20);
-            this.urClientRadioButton.TabIndex = 1;
-            this.urClientRadioButton.Text = "юридическое лицо";
-            this.urClientRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // clientComboBox
-            // 
-            this.clientComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.clientComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.clientComboBox.FormattingEnabled = true;
-            this.clientComboBox.Location = new System.Drawing.Point(184, 29);
-            this.clientComboBox.Name = "clientComboBox";
-            this.clientComboBox.Size = new System.Drawing.Size(447, 24);
-            this.clientComboBox.TabIndex = 2;
-            // 
-            // addClientButton
-            // 
-            this.addClientButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addClientButton.Location = new System.Drawing.Point(637, 23);
-            this.addClientButton.Name = "addClientButton";
-            this.addClientButton.Size = new System.Drawing.Size(38, 33);
-            this.addClientButton.TabIndex = 3;
-            this.addClientButton.Text = "+";
-            this.addClientButton.UseVisualStyleBackColor = true;
-            // 
-            // clinetInfoLabel
-            // 
-            this.clinetInfoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.clinetInfoLabel.Location = new System.Drawing.Point(7, 70);
-            this.clinetInfoLabel.Name = "clinetInfoLabel";
-            this.clinetInfoLabel.Size = new System.Drawing.Size(668, 77);
-            this.clinetInfoLabel.TabIndex = 4;
-            this.clinetInfoLabel.Text = "Информация о клиенте";
-            // 
-            // ColumnServiceCheckBox
-            // 
-            this.ColumnServiceCheckBox.DataPropertyName = "selected";
-            this.ColumnServiceCheckBox.Frozen = true;
-            this.ColumnServiceCheckBox.HeaderText = "";
-            this.ColumnServiceCheckBox.Name = "ColumnServiceCheckBox";
-            this.ColumnServiceCheckBox.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnServiceCheckBox.Width = 20;
-            // 
-            // ColumnServiceTitle
-            // 
-            this.ColumnServiceTitle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ColumnServiceTitle.DataPropertyName = "title";
-            this.ColumnServiceTitle.HeaderText = "Наименование";
-            this.ColumnServiceTitle.Name = "ColumnServiceTitle";
-            this.ColumnServiceTitle.ReadOnly = true;
-            this.ColumnServiceTitle.Width = 132;
-            // 
-            // ColumnServicePrice
-            // 
-            this.ColumnServicePrice.DataPropertyName = "price";
-            this.ColumnServicePrice.HeaderText = "Стоимость, руб.";
-            this.ColumnServicePrice.MinimumWidth = 150;
-            this.ColumnServicePrice.Name = "ColumnServicePrice";
-            this.ColumnServicePrice.ReadOnly = true;
-            this.ColumnServicePrice.Width = 150;
-            // 
-            // ColumnServiceDuration
-            // 
-            this.ColumnServiceDuration.DataPropertyName = "duration";
-            this.ColumnServiceDuration.HeaderText = "Длительность, ч";
-            this.ColumnServiceDuration.MinimumWidth = 150;
-            this.ColumnServiceDuration.Name = "ColumnServiceDuration";
-            this.ColumnServiceDuration.ReadOnly = true;
-            this.ColumnServiceDuration.Width = 150;
+            this.phisClientRadioButton.CheckedChanged += new System.EventHandler(this.phisClientRadioButton_CheckedChanged);
             // 
             // serviceSourceBindingSource
             // 
@@ -340,7 +347,7 @@ namespace RussianCosmeticApp
         private System.Windows.Forms.Button SaveOrderButton;
         private System.Windows.Forms.BindingSource serviceSourceBindingSource;
         private System.Windows.Forms.GroupBox ClientGroupBox;
-        private System.Windows.Forms.Label clinetInfoLabel;
+        private System.Windows.Forms.Label clientInfoLabel;
         private System.Windows.Forms.Button addClientButton;
         private System.Windows.Forms.ComboBox clientComboBox;
         private System.Windows.Forms.RadioButton urClientRadioButton;

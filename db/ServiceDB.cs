@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using RussianCosmeticApp.Models;
-using RussianCosmeticApp.db;
 using MySql.Data.MySqlClient;
 
 namespace RussianCosmeticApp.db

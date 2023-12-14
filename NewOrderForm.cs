@@ -4,6 +4,8 @@ using System.Windows.Forms;
 using RussianCosmeticApp.db;
 using RussianCosmeticApp.Models;
 using RussianCosmeticApp.Sources;
+using RussianCosmeticApp.Forms;
+using System.Collections.Generic;
 
 namespace RussianCosmeticApp
 {
@@ -30,6 +32,30 @@ namespace RussianCosmeticApp
             }
             servicesGridView.DataSource = services;
         }
+
+        public void UpdateClients()
+        {
+            clientComboBox.Items.Clear();
+            clientComboBox.Text = "";
+            List<AbsClientModel> clients = new List<AbsClientModel>();
+            if (phisClientRadioButton.Checked)
+            {
+                clients = new List<AbsClientModel>(PhysClientDB.GetAll());
+            }
+            else
+            {
+                // TODO
+            }
+            if (clients.Count > 0)
+            {
+                clientComboBox.Items.AddRange(clients.ToArray());
+                clientComboBox.SelectedIndex = 0;
+            }
+            else
+            {
+                clientInfoLabel.Text = "Список клиентов пуст";
+            }
+        }
         
         private int UpdateOrderID()
         {
@@ -53,6 +79,8 @@ namespace RussianCosmeticApp
         private void ResetOrder()
         {
             UpdateServices();
+            phisClientRadioButton.Checked = true;
+            UpdateClients();
             currentOrder = new OrderDB(
                 id: UpdateOrderID(),
                 dataCreate: DateTime.Now,
@@ -86,8 +114,36 @@ namespace RussianCosmeticApp
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Неверный формат кода лабораторной посуды", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error); ; ;
+                MessageBox.Show("Неверный формат кода лабораторной посуды", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 UpdateOrderID();
+            }
+        }
+
+        private void addClientButton_Click(object sender, EventArgs e)
+        {
+            Form form;
+            if (phisClientRadioButton.Checked)
+            {
+                form = new NewPhysClientForm();
+                form.Show(this);
+            }
+            else
+            {
+                // TODO
+            }
+        }
+
+        private void phisClientRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateClients();
+        }
+
+        private void clientComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbsClientModel client = clientComboBox.SelectedItem as AbsClientModel;
+            if (client != null)
+            {
+                clientInfoLabel.Text = client.GetInfo();
             }
         }
     }

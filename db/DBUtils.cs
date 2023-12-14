@@ -1,4 +1,6 @@
-﻿using MySql.Data.MySqlClient;
+﻿using System.Windows.Forms;
+
+using MySql.Data.MySqlClient;
 
 namespace RussianCosmeticApp.db
 {
@@ -23,7 +25,6 @@ namespace RussianCosmeticApp.db
             if (connection == null)
             {
                 
-
                 connection = new MySqlConnection(
                     $"Server={host};Database={databaseName};port={port};User Id={userName};password={userPassword}"
                 );
@@ -34,7 +35,21 @@ namespace RussianCosmeticApp.db
             {
                 connection.Close();
             }
-            connection.Open();
+            while (true) {
+                try
+                {
+                    connection.Open();
+                    break;
+                }
+                catch (MySqlException e)
+                {
+                    DialogResult result = MessageBox.Show($"Ошибка подключения к базе данных", "Ошибка", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                    if (result == DialogResult.Cancel)
+                    {
+                        System.Environment.Exit(1);
+                    }
+                }
+            }
             return connection;
         }
     }

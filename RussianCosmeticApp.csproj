@@ -100,8 +100,18 @@
   <ItemGroup>
     <Compile Include="db\DBUtils.cs" />
     <Compile Include="db\OrderDB.cs" />
+    <Compile Include="db\PhysClientDB.cs" />
     <Compile Include="db\StatusDB.cs" />
     <Compile Include="db\ServiceDB.cs" />
+    <Compile Include="Forms\NewPhysClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewPhysClientForm.Designer.cs">
+      <DependentUpon>NewPhysClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AbsClientModel.cs" />
+    <Compile Include="Models\PersonModel.cs" />
+    <Compile Include="Models\PhysClientModel.cs" />
     <Compile Include="NewOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +129,9 @@
       <DependentUpon>russian_cosmeticDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Sources\ServiceSource.cs" />
+    <EmbeddedResource Include="Forms\NewPhysClientForm.resx">
+      <DependentUpon>NewPhysClientForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NewOrderForm.resx">
       <DependentUpon>NewOrderForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +169,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="backup.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
