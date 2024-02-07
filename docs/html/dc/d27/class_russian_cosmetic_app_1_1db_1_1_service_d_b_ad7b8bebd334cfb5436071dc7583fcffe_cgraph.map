@@ -1,0 +1,7 @@
+<map id="RussianCosmeticApp.db.ServiceDB.GetAll" name="RussianCosmeticApp.db.ServiceDB.GetAll">
+<area shape="rect" id="Node000001" title="Возвращает все услуги из базы данных" alt="" coords="5,39,216,81"/>
+<area shape="rect" id="Node000002" href="$d9/dce/class_russian_cosmetic_app_1_1db_1_1_d_b_utils.html#afd3eb73b91a83ceb13caba36851665a2" title="Статический метод для подключение к базе данных" alt="" coords="264,5,480,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,44,248,40,248,45,217,49"/>
+<area shape="rect" id="Node000003" href="$dc/d27/class_russian_cosmetic_app_1_1db_1_1_service_d_b.html#a917551b192180cafa93e866ff44904fe" title="Конструктор класса ServiceDB" alt="" coords="267,72,477,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,71,251,75,251,81,216,76"/>
+</map>

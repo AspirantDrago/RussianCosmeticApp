@@ -1,0 +1,5 @@
+<map id="RussianCosmeticApp.db.OrderDB.GetNewId" name="RussianCosmeticApp.db.OrderDB.GetNewId">
+<area shape="rect" id="Node000001" title="Возвращает следующий ID для нового заказа" alt="" coords="5,5,206,48"/>
+<area shape="rect" id="Node000002" href="$d9/dce/class_russian_cosmetic_app_1_1db_1_1_d_b_utils.html#afd3eb73b91a83ceb13caba36851665a2" title="Статический метод для подключение к базе данных" alt="" coords="254,5,470,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,24,238,24,238,29,206,29"/>
+</map>

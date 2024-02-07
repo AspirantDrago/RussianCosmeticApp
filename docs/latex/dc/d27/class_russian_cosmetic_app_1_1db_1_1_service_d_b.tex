@@ -1,0 +1,136 @@
+\doxysection{Класс Russian\+Cosmetic\+App.\+db.\+Service\+DB}
+\hypertarget{class_russian_cosmetic_app_1_1db_1_1_service_d_b}{}\label{class_russian_cosmetic_app_1_1db_1_1_service_d_b}\index{RussianCosmeticApp.db.ServiceDB@{RussianCosmeticApp.db.ServiceDB}}
+
+
+Класс модели данных для услуги с привязкой к базе данных  
+
+
+
+
+Граф наследования\+:Russian\+Cosmetic\+App.\+db.\+Service\+DB\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{dd/d4a/class_russian_cosmetic_app_1_1db_1_1_service_d_b__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Russian\+Cosmetic\+App.\+db.\+Service\+DB\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{d7/d7b/class_russian_cosmetic_app_1_1db_1_1_service_d_b__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_russian_cosmetic_app_1_1db_1_1_service_d_b_a917551b192180cafa93e866ff44904fe}{Service\+DB}} (int id, string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model_ac55b5d9d00ca9aadcd20a86de1ab7476}{title}}, decimal \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model_a1d00aa454792c0494d3d2685f47d2d5a}{price}}, float \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model_a6940d0763314501c88aa5aca0879ee6a}{duration}}, double std=0.\+0)
+\begin{DoxyCompactList}\small\item\em Конструктор класса Service\+DB \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model}{Russian\+Cosmetic\+App.\+Models.\+Service\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model_af672de2caa4da3333edf8d8a2ec8f71b}{Service\+Model}} (int id, string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model_ac55b5d9d00ca9aadcd20a86de1ab7476}{title}}, decimal \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model_a1d00aa454792c0494d3d2685f47d2d5a}{price}}, float \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model_a6940d0763314501c88aa5aca0879ee6a}{duration}}, double std=0.\+0)
+\begin{DoxyCompactList}\small\item\em Конструктор класса Service\+Model \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model_a99225d8176887fa59def59c929650ba3}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Конвертирует объект в строку \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model}{Service\+Model}} $>$ \mbox{\hyperlink{class_russian_cosmetic_app_1_1db_1_1_service_d_b_ad7b8bebd334cfb5436071dc7583fcffe}{Get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает все услуги из базы данных \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Дополнительные унаследованные члены}
+\doxysubsection*{Защищенные данные унаследованные от \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model}{Russian\+Cosmetic\+App.\+Models.\+Service\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \+\_\+id}
+\begin{DoxyCompactList}\small\item\em ID услуги \end{DoxyCompactList}\item 
+string {\bfseries \+\_\+title}
+\begin{DoxyCompactList}\small\item\em Название услуги \end{DoxyCompactList}\item 
+decimal {\bfseries \+\_\+price}
+\begin{DoxyCompactList}\small\item\em Цена услуги, руб \end{DoxyCompactList}\item 
+float {\bfseries \+\_\+duration}
+\begin{DoxyCompactList}\small\item\em Длительность услуги, часы \end{DoxyCompactList}\item 
+double {\bfseries \+\_\+std}
+\begin{DoxyCompactList}\small\item\em Стандартное отклонение результата услуги \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Свойства унаследованные от \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model}{Russian\+Cosmetic\+App.\+Models.\+Service\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model_ac55b5d9d00ca9aadcd20a86de1ab7476}{title}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Возвращает название услуги \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model_a1d00aa454792c0494d3d2685f47d2d5a}{price}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Возвращает цену услуги \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model_a6940d0763314501c88aa5aca0879ee6a}{duration}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Возвращает длительность услуги \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс модели данных для услуги с привязкой к базе данных 
+
+\begin{DoxySeeAlso}{См. также}
+\doxylink{class_russian_cosmetic_app_1_1_models_1_1_service_model}{Russian\+Cosmetic\+App.\+Models.\+Service\+Model}
+
+
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_russian_cosmetic_app_1_1db_1_1_service_d_b_a917551b192180cafa93e866ff44904fe}\label{class_russian_cosmetic_app_1_1db_1_1_service_d_b_a917551b192180cafa93e866ff44904fe} 
+\index{RussianCosmeticApp.db.ServiceDB@{RussianCosmeticApp.db.ServiceDB}!ServiceDB@{ServiceDB}}
+\index{ServiceDB@{ServiceDB}!RussianCosmeticApp.db.ServiceDB@{RussianCosmeticApp.db.ServiceDB}}
+\doxysubsubsection{\texorpdfstring{ServiceDB()}{ServiceDB()}}
+{\footnotesize\ttfamily Russian\+Cosmetic\+App.\+db.\+Service\+DB.\+Service\+DB (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{title,  }\item[{decimal}]{price,  }\item[{float}]{duration,  }\item[{double}]{std = {\ttfamily 0\+:\+:0} }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса Service\+DB 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & ID услуги\\
+\hline
+{\em title} & Название услуги\\
+\hline
+{\em price} & Цена услуги, рубли\\
+\hline
+{\em duration} & Длительность услуги, часы\\
+\hline
+{\em std} & Стандартное отклонение результата услуги. По умолчанию {\ttfamily 0.\+0}\\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d27/class_russian_cosmetic_app_1_1db_1_1_service_d_b_a917551b192180cafa93e866ff44904fe_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_russian_cosmetic_app_1_1db_1_1_service_d_b_ad7b8bebd334cfb5436071dc7583fcffe}\label{class_russian_cosmetic_app_1_1db_1_1_service_d_b_ad7b8bebd334cfb5436071dc7583fcffe} 
+\index{RussianCosmeticApp.db.ServiceDB@{RussianCosmeticApp.db.ServiceDB}!GetAll@{GetAll}}
+\index{GetAll@{GetAll}!RussianCosmeticApp.db.ServiceDB@{RussianCosmeticApp.db.ServiceDB}}
+\doxysubsubsection{\texorpdfstring{GetAll()}{GetAll()}}
+{\footnotesize\ttfamily static List$<$ \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model}{Service\+Model}} $>$ Russian\+Cosmetic\+App.\+db.\+Service\+DB.\+Get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Возвращает все услуги из базы данных 
+
+\begin{DoxyReturn}{Возвращает}
+Список всех услуг из базы данных 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d27/class_russian_cosmetic_app_1_1db_1_1_service_d_b_ad7b8bebd334cfb5436071dc7583fcffe_cgraph}
+\end{center}
+\end{figure}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Anastasiya/source/repos/\+Russian\+Cosmetic\+App/db/Service\+DB.\+cs\end{DoxyCompactItemize}

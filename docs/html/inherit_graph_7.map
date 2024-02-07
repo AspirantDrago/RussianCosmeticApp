@@ -1,0 +1,7 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="Node000000" href="$d6/d61/class_russian_cosmetic_app_1_1_models_1_1_abs_client_model.html" title="Абстрактный класс модели данных для абстрактного клиента" alt="" coords="5,5,202,48"/>
+<area shape="rect" id="Node000001" href="$df/db9/class_russian_cosmetic_app_1_1_models_1_1_phys_client_model.html" title="Класс модели данных для клиента &#45; физического лица" alt="" coords="250,5,446,48"/>
+<area shape="poly" id="edge17_Node000000_Node000001" title=" " alt="" coords="217,24,249,24,249,29,217,29"/>
+<area shape="rect" id="Node000002" href="$d3/d14/class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b.html" title="Класс модели данных для клиента &#45; физического лица с привязкой к базе данных" alt="" coords="494,5,692,48"/>
+<area shape="poly" id="edge18_Node000001_Node000002" title=" " alt="" coords="462,24,494,24,494,29,462,29"/>
+</map>

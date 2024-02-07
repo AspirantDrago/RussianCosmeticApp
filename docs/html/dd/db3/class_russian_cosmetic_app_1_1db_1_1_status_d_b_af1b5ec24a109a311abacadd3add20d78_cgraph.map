@@ -1,0 +1,7 @@
+<map id="RussianCosmeticApp.db.StatusDB.GetAll" name="RussianCosmeticApp.db.StatusDB.GetAll">
+<area shape="rect" id="Node000001" title="Возвращает все статусы заказа из базы данных" alt="" coords="5,39,212,81"/>
+<area shape="rect" id="Node000002" href="$d9/dce/class_russian_cosmetic_app_1_1db_1_1_d_b_utils.html#afd3eb73b91a83ceb13caba36851665a2" title="Статический метод для подключение к базе данных" alt="" coords="260,5,476,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,44,244,40,244,45,212,49"/>
+<area shape="rect" id="Node000003" href="$da/d1a/class_russian_cosmetic_app_1_1_models_1_1_status_model.html#a5aef317ee405dc0c973417af2f780066" title="Конструктор класса StatusModel" alt="" coords="270,72,466,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,71,255,76,254,81,212,76"/>
+</map>

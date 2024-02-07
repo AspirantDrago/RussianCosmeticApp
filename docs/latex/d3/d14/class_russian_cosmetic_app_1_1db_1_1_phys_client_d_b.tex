@@ -1,0 +1,248 @@
+\doxysection{Класс Russian\+Cosmetic\+App.\+db.\+Phys\+Client\+DB}
+\hypertarget{class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b}{}\label{class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b}\index{RussianCosmeticApp.db.PhysClientDB@{RussianCosmeticApp.db.PhysClientDB}}
+
+
+Класс модели данных для клиента -\/ физического лица с привязкой к базе данных  
+
+
+
+
+Граф наследования\+:Russian\+Cosmetic\+App.\+db.\+Phys\+Client\+DB\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{d4/db0/class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Russian\+Cosmetic\+App.\+db.\+Phys\+Client\+DB\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{da/dce/class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_a5e25bfe817dbc1413cd77103eae670c2}{Phys\+Client\+DB}} (int? id, string email, string password, string name, string surname, string patronymic, System.\+Date\+Time birthday, int passport\+Seria, int passport\+Number, string phone)
+\begin{DoxyCompactList}\small\item\em Конструктор класса Phys\+Client\+DB \end{DoxyCompactList}\item 
+\Hypertarget{class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_a78a4487b6ad83d52c5d3d1516a3e39a3}\label{class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_a78a4487b6ad83d52c5d3d1516a3e39a3} 
+void {\bfseries Save} ()
+\begin{DoxyCompactList}\small\item\em Сохранение клиента в базе данных (добавление или обновление) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_phys_client_model}{Russian\+Cosmetic\+App.\+Models.\+Phys\+Client\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_phys_client_model_a6503b195583b79c97bbf8dc57bbde02a}{Phys\+Client\+Model}} (int? id, string email, string password, string name, string surname, string patronymic, Date\+Time birthday, int passport\+Seria, int passport\+Number, string phone)
+\begin{DoxyCompactList}\small\item\em Конструктор класса Phys\+Client\+Model \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_phys_client_model_a051c1f45bb7a59347b4d7a8c54aa94f0}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Конвертирует объект в строку \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_phys_client_model_aaf90035f720fc610fbca347749c4cac0}{Get\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает информацию о клиенте в виде сниппета \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model}{Russian\+Cosmetic\+App.\+Models.\+Abs\+Client\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a9107ae80cff62297ce643e34a8c1bb2d}{Abs\+Client\+Model}} (int? id, string email, string password)
+\begin{DoxyCompactList}\small\item\em Конструктор класса Abs\+Client\+Model \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_ab5f2b045cc200f30c51b58dc9b693181}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Конвертирует объект в строку \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_ab789b26aec17cc7cc2b9c2371d3e41be}{Get\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает информацию о клиенте в виде сниппета \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_phys_client_model}{Phys\+Client\+Model}} $>$ \mbox{\hyperlink{class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_a52fccdaafb8e41be610425a34211e8dc}{Get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Получение всех клиентов -\/ физических лиц из базы данных \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые статические члены унаследованные от \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model}{Russian\+Cosmetic\+App.\+Models.\+Abs\+Client\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a893647a733e4a70c30ea8eb71aa3e30b}{Get\+Hash\+Password}} (string password)
+\begin{DoxyCompactList}\small\item\em Вычисляет хэш пароля по алгоритму, заданному в поле hash \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_ab44a18eccebd36dea00288a436448fca}{Insert}} ()
+\begin{DoxyCompactList}\small\item\em Добавление клиента в базу данных \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_a3901769d10b7bb3c1f210e9b13ecb7e6}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Изменение данных клиента в базе данных \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Дополнительные унаследованные члены}
+\doxysubsection*{Защищенные данные унаследованные от \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_phys_client_model}{Russian\+Cosmetic\+App.\+Models.\+Phys\+Client\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_person_model}{Person\+Model}} {\bfseries \+\_\+person}
+\begin{DoxyCompactList}\small\item\em Модель данных для физического лица \end{DoxyCompactList}\item 
+Date\+Time {\bfseries \+\_\+birtday}
+\begin{DoxyCompactList}\small\item\em Дата рождения клиента \end{DoxyCompactList}\item 
+string {\bfseries \+\_\+passport}
+\begin{DoxyCompactList}\small\item\em Паспорт клиента 10 цифр (серия и номер без пробелов) \end{DoxyCompactList}\item 
+string {\bfseries \+\_\+phone}
+\begin{DoxyCompactList}\small\item\em Контактный телефон клиента \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные унаследованные от \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model}{Russian\+Cosmetic\+App.\+Models.\+Abs\+Client\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+int? {\bfseries \+\_\+id}
+\begin{DoxyCompactList}\small\item\em ID клиента \end{DoxyCompactList}\item 
+string {\bfseries \+\_\+email}
+\begin{DoxyCompactList}\small\item\em Адрес электронной почты клиента \end{DoxyCompactList}\item 
+string {\bfseries \+\_\+password}
+\begin{DoxyCompactList}\small\item\em Хэш пароля клиента \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Статические защищенные данные унаследованные от \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model}{Russian\+Cosmetic\+App.\+Models.\+Abs\+Client\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+static Hash\+Algorithm {\bfseries hash} = SHA256.\+Create()
+\begin{DoxyCompactList}\small\item\em Статический объект класса System.\+Security.\+Cryptography.\+Hash\+Algorithm для хэширования паролей \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Свойства унаследованные от \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_phys_client_model}{Russian\+Cosmetic\+App.\+Models.\+Phys\+Client\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_phys_client_model_abe654abd199b2b22a63de9491dbb9c52}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Возвращает имя клиента \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_phys_client_model_ae72be6818d50a6b0bfb97e166335d0e0}{Surname}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Возвращает фамилию клиента \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_phys_client_model_a1502affa8932f79d87dedf82baab7920}{Patronymic}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Возвращает отчество клиента \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_phys_client_model_aeccd01865a4f58a7bae6c5978c156ff8}{Birthday}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Возвращает или задает дату рождения клиента \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_phys_client_model_a06d4c44756edf83d47847e48662f0e75}{Passport\+Seria}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Возвращает серию паспорта клиента \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_phys_client_model_a7cbc8f2340f0c53d259e10b2bddd4777}{Passport\+Number}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Возвращает номер паспорта клиента \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_phys_client_model_aa179368c8f658bf040e06ec25d4d09f4}{Phone}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Возвращает или задает контактный телефон клиента. При задании номера телефона удаляются все символы, кроме цифр. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Свойства унаследованные от \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model}{Russian\+Cosmetic\+App.\+Models.\+Abs\+Client\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a38a553ab566f24683bf54bc802444f91}{Email}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Возвращает адрес электронной почты клиента \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс модели данных для клиента -\/ физического лица с привязкой к базе данных 
+
+\begin{DoxySeeAlso}{См. также}
+\doxylink{class_russian_cosmetic_app_1_1_models_1_1_phys_client_model}{Russian\+Cosmetic\+App.\+Models.\+Phys\+Client\+Model}
+
+
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_a5e25bfe817dbc1413cd77103eae670c2}\label{class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_a5e25bfe817dbc1413cd77103eae670c2} 
+\index{RussianCosmeticApp.db.PhysClientDB@{RussianCosmeticApp.db.PhysClientDB}!PhysClientDB@{PhysClientDB}}
+\index{PhysClientDB@{PhysClientDB}!RussianCosmeticApp.db.PhysClientDB@{RussianCosmeticApp.db.PhysClientDB}}
+\doxysubsubsection{\texorpdfstring{PhysClientDB()}{PhysClientDB()}}
+{\footnotesize\ttfamily Russian\+Cosmetic\+App.\+db.\+Phys\+Client\+DB.\+Phys\+Client\+DB (\begin{DoxyParamCaption}\item[{int?}]{id,  }\item[{string}]{email,  }\item[{string}]{password,  }\item[{string}]{name,  }\item[{string}]{surname,  }\item[{string}]{patronymic,  }\item[{System\+::\+Date\+Time}]{birthday,  }\item[{int}]{passport\+Seria,  }\item[{int}]{passport\+Number,  }\item[{string}]{phone }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса Phys\+Client\+DB 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & ID клиента\\
+\hline
+{\em email} & Адрес электронной почты клиента\\
+\hline
+{\em password} & Хэш пароля клиента\\
+\hline
+{\em name} & Имя клиента\\
+\hline
+{\em surname} & Фамилия клиента\\
+\hline
+{\em patronymic} & Отчество клиента\\
+\hline
+{\em birthday} & Дата рождения клиента\\
+\hline
+{\em passport\+Seria} & Серия паспорта клиента (4 цифры)\\
+\hline
+{\em passport\+Number} & Номер паспорта клиента (6 цифр)\\
+\hline
+{\em phone} & Номер телефона клиента\\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d14/class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_a5e25bfe817dbc1413cd77103eae670c2_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_a52fccdaafb8e41be610425a34211e8dc}\label{class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_a52fccdaafb8e41be610425a34211e8dc} 
+\index{RussianCosmeticApp.db.PhysClientDB@{RussianCosmeticApp.db.PhysClientDB}!GetAll@{GetAll}}
+\index{GetAll@{GetAll}!RussianCosmeticApp.db.PhysClientDB@{RussianCosmeticApp.db.PhysClientDB}}
+\doxysubsubsection{\texorpdfstring{GetAll()}{GetAll()}}
+{\footnotesize\ttfamily static List$<$ \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_phys_client_model}{Phys\+Client\+Model}} $>$ Russian\+Cosmetic\+App.\+db.\+Phys\+Client\+DB.\+Get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Получение всех клиентов -\/ физических лиц из базы данных 
+
+\begin{DoxyReturn}{Возвращает}
+Список всех клиентов -\/ физических лиц 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d14/class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_a52fccdaafb8e41be610425a34211e8dc_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_ab44a18eccebd36dea00288a436448fca}\label{class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_ab44a18eccebd36dea00288a436448fca} 
+\index{RussianCosmeticApp.db.PhysClientDB@{RussianCosmeticApp.db.PhysClientDB}!Insert@{Insert}}
+\index{Insert@{Insert}!RussianCosmeticApp.db.PhysClientDB@{RussianCosmeticApp.db.PhysClientDB}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily void Russian\+Cosmetic\+App.\+db.\+Phys\+Client\+DB.\+Insert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Добавление клиента в базу данных 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em System.\+Exception} & Пользователь не был добавлен\\
+\hline
+\end{DoxyExceptions}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d14/class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_ab44a18eccebd36dea00288a436448fca_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d14/class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_ab44a18eccebd36dea00288a436448fca_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_a3901769d10b7bb3c1f210e9b13ecb7e6}\label{class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_a3901769d10b7bb3c1f210e9b13ecb7e6} 
+\index{RussianCosmeticApp.db.PhysClientDB@{RussianCosmeticApp.db.PhysClientDB}!Update@{Update}}
+\index{Update@{Update}!RussianCosmeticApp.db.PhysClientDB@{RussianCosmeticApp.db.PhysClientDB}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Russian\+Cosmetic\+App.\+db.\+Phys\+Client\+DB.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Изменение данных клиента в базе данных 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em System.\+Not\+Implemented\+Exception} & Данный метод не реализован \\
+\hline
+\end{DoxyExceptions}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d14/class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b_a3901769d10b7bb3c1f210e9b13ecb7e6_icgraph}
+\end{center}
+\end{figure}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Anastasiya/source/repos/\+Russian\+Cosmetic\+App/db/Phys\+Client\+DB.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+\doxysection{Класс Russian\+Cosmetic\+App.\+Models.\+Order\+Model}
+\hypertarget{class_russian_cosmetic_app_1_1_models_1_1_order_model}{}\label{class_russian_cosmetic_app_1_1_models_1_1_order_model}\index{RussianCosmeticApp.Models.OrderModel@{RussianCosmeticApp.Models.OrderModel}}
+
+
+Класс модели данных для заказа  
+
+
+
+
+Граф наследования\+:Russian\+Cosmetic\+App.\+Models.\+Order\+Model\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{df/ddb/class_russian_cosmetic_app_1_1_models_1_1_order_model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Russian\+Cosmetic\+App.\+Models.\+Order\+Model\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{d5/dfa/class_russian_cosmetic_app_1_1_models_1_1_order_model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model_a26386f2c3d2bf431c450279889818e00}{Order\+Model}} (int id, Date\+Time data\+Create, \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_status_model}{Status\+Model}} status, float? \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model_ab9cd107935a3498ff6ab14c98a68a10a}{duration}}, bool removed=false)
+\begin{DoxyCompactList}\small\item\em Конструктор объекта класса Order\+Model \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model_ac7b42c40e4a2040b596972549c512f46}{Add\+Service}} (\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model}{Service\+Model}} service)
+\begin{DoxyCompactList}\small\item\em Добавляет услугу в заказ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model_a2ad548b233839fc7fe0d324958a5e383}{Remove\+Service}} (\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model}{Service\+Model}} service)
+\begin{DoxyCompactList}\small\item\em Удаляет услугу из заказа \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_order_model_ac9ee747a7e14ff6c635293b5a24b0358}\label{class_russian_cosmetic_app_1_1_models_1_1_order_model_ac9ee747a7e14ff6c635293b5a24b0358} 
+int {\bfseries \+\_\+id}
+\begin{DoxyCompactList}\small\item\em ID заказа \end{DoxyCompactList}\item 
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_order_model_aa4f1ed8f3e2a3cc11b47473e56900f7f}\label{class_russian_cosmetic_app_1_1_models_1_1_order_model_aa4f1ed8f3e2a3cc11b47473e56900f7f} 
+Date\+Time {\bfseries \+\_\+data\+Create}
+\begin{DoxyCompactList}\small\item\em Дата и время создания заказа \end{DoxyCompactList}\item 
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_order_model_a092b9e37b88f1cdced409b7338bb32d9}\label{class_russian_cosmetic_app_1_1_models_1_1_order_model_a092b9e37b88f1cdced409b7338bb32d9} 
+\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_status_model}{Status\+Model}} {\bfseries \+\_\+status}
+\begin{DoxyCompactList}\small\item\em Стаус заказа \end{DoxyCompactList}\item 
+float? \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model_ab230f6b04dfba40749ddb4a70b0c63a5}{\+\_\+duration}}
+\begin{DoxyCompactList}\small\item\em Длительность заказа \end{DoxyCompactList}\item 
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_order_model_a90abff94e2054390665d4a50f43e4483}\label{class_russian_cosmetic_app_1_1_models_1_1_order_model_a90abff94e2054390665d4a50f43e4483} 
+bool {\bfseries \+\_\+removed}
+\begin{DoxyCompactList}\small\item\em Удален ли заказ \end{DoxyCompactList}\item 
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_order_model_a838a858af183e4bfc9fa4ea8eefcd42d}\label{class_russian_cosmetic_app_1_1_models_1_1_order_model_a838a858af183e4bfc9fa4ea8eefcd42d} 
+Hash\+Set$<$ \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model}{Service\+Model}} $>$ {\bfseries \+\_\+services}
+\begin{DoxyCompactList}\small\item\em Множество услуг в заказе \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Свойства}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model_ab9cd107935a3498ff6ab14c98a68a10a}{duration}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Возвращает суммарную длительность заказа \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model_ad7cdeba1d3ed25b8d83add4961018235}{price}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Возвращает суммарную стоимость заказа \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс модели данных для заказа 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_order_model_a26386f2c3d2bf431c450279889818e00}\label{class_russian_cosmetic_app_1_1_models_1_1_order_model_a26386f2c3d2bf431c450279889818e00} 
+\index{RussianCosmeticApp.Models.OrderModel@{RussianCosmeticApp.Models.OrderModel}!OrderModel@{OrderModel}}
+\index{OrderModel@{OrderModel}!RussianCosmeticApp.Models.OrderModel@{RussianCosmeticApp.Models.OrderModel}}
+\doxysubsubsection{\texorpdfstring{OrderModel()}{OrderModel()}}
+{\footnotesize\ttfamily Russian\+Cosmetic\+App.\+Models.\+Order\+Model.\+Order\+Model (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{Date\+Time}]{data\+Create,  }\item[{\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_status_model}{Status\+Model}}}]{status,  }\item[{float?}]{duration,  }\item[{bool}]{removed = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Конструктор объекта класса Order\+Model 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & ID заказа\\
+\hline
+{\em data\+Create} & Дата и время создания заказа\\
+\hline
+{\em status} & Стаус заказа\\
+\hline
+{\em duration} & Длительность заказа. {\ttfamily null} если длительность неизвестна\\
+\hline
+{\em removed} & Удален ли заказ\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_order_model_ac7b42c40e4a2040b596972549c512f46}\label{class_russian_cosmetic_app_1_1_models_1_1_order_model_ac7b42c40e4a2040b596972549c512f46} 
+\index{RussianCosmeticApp.Models.OrderModel@{RussianCosmeticApp.Models.OrderModel}!AddService@{AddService}}
+\index{AddService@{AddService}!RussianCosmeticApp.Models.OrderModel@{RussianCosmeticApp.Models.OrderModel}}
+\doxysubsubsection{\texorpdfstring{AddService()}{AddService()}}
+{\footnotesize\ttfamily void Russian\+Cosmetic\+App.\+Models.\+Order\+Model.\+Add\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model}{Service\+Model}}}]{service }\end{DoxyParamCaption})}
+
+
+
+Добавляет услугу в заказ 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em service} & Объект модели услуги\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_order_model_a2ad548b233839fc7fe0d324958a5e383}\label{class_russian_cosmetic_app_1_1_models_1_1_order_model_a2ad548b233839fc7fe0d324958a5e383} 
+\index{RussianCosmeticApp.Models.OrderModel@{RussianCosmeticApp.Models.OrderModel}!RemoveService@{RemoveService}}
+\index{RemoveService@{RemoveService}!RussianCosmeticApp.Models.OrderModel@{RussianCosmeticApp.Models.OrderModel}}
+\doxysubsubsection{\texorpdfstring{RemoveService()}{RemoveService()}}
+{\footnotesize\ttfamily void Russian\+Cosmetic\+App.\+Models.\+Order\+Model.\+Remove\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model}{Service\+Model}}}]{service }\end{DoxyParamCaption})}
+
+
+
+Удаляет услугу из заказа 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em service} & Объект модели услуги\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Данные класса}
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_order_model_ab230f6b04dfba40749ddb4a70b0c63a5}\label{class_russian_cosmetic_app_1_1_models_1_1_order_model_ab230f6b04dfba40749ddb4a70b0c63a5} 
+\index{RussianCosmeticApp.Models.OrderModel@{RussianCosmeticApp.Models.OrderModel}!\_duration@{\_duration}}
+\index{\_duration@{\_duration}!RussianCosmeticApp.Models.OrderModel@{RussianCosmeticApp.Models.OrderModel}}
+\doxysubsubsection{\texorpdfstring{\_duration}{\_duration}}
+{\footnotesize\ttfamily float? Russian\+Cosmetic\+App.\+Models.\+Order\+Model.\+\_\+duration\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Длительность заказа 
+
+Может быть {\ttfamily null}, если длительность неизвестна 
+
+\doxysubsection{Полный список свойств}
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_order_model_ab9cd107935a3498ff6ab14c98a68a10a}\label{class_russian_cosmetic_app_1_1_models_1_1_order_model_ab9cd107935a3498ff6ab14c98a68a10a} 
+\index{RussianCosmeticApp.Models.OrderModel@{RussianCosmeticApp.Models.OrderModel}!duration@{duration}}
+\index{duration@{duration}!RussianCosmeticApp.Models.OrderModel@{RussianCosmeticApp.Models.OrderModel}}
+\doxysubsubsection{\texorpdfstring{duration}{duration}}
+{\footnotesize\ttfamily float Russian\+Cosmetic\+App.\+Models.\+Order\+Model.\+duration\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Возвращает суммарную длительность заказа 
+
+Суммарная длительность заказа, часы \Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_order_model_ad7cdeba1d3ed25b8d83add4961018235}\label{class_russian_cosmetic_app_1_1_models_1_1_order_model_ad7cdeba1d3ed25b8d83add4961018235} 
+\index{RussianCosmeticApp.Models.OrderModel@{RussianCosmeticApp.Models.OrderModel}!price@{price}}
+\index{price@{price}!RussianCosmeticApp.Models.OrderModel@{RussianCosmeticApp.Models.OrderModel}}
+\doxysubsubsection{\texorpdfstring{price}{price}}
+{\footnotesize\ttfamily decimal Russian\+Cosmetic\+App.\+Models.\+Order\+Model.\+price\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Возвращает суммарную стоимость заказа 
+
+Суммарная стоимость заказа, рубли 
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Anastasiya/source/repos/\+Russian\+Cosmetic\+App/\+Models/Order\+Model.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="RussianCosmeticApp.Models.PhysClientModel" name="RussianCosmeticApp.Models.PhysClientModel">
+<area shape="rect" id="Node000001" title="Класс модели данных для клиента &#45; физического лица" alt="" coords="6,80,203,123"/>
+<area shape="rect" id="Node000003" href="$d3/d14/class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b.html" title="Класс модели данных для клиента &#45; физического лица с привязкой к базе данных" alt="" coords="5,171,204,213"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,138,107,170,102,170,102,138"/>
+<area shape="rect" id="Node000002" href="$d6/d61/class_russian_cosmetic_app_1_1_models_1_1_abs_client_model.html" title="Абстрактный класс модели данных для абстрактного клиента" alt="" coords="48,5,161,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,48,107,80,102,80,102,48"/>
+</map>

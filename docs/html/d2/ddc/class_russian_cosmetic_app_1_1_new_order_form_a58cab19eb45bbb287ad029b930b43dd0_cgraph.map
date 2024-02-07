@@ -1,0 +1,9 @@
+<map id="RussianCosmeticApp.NewOrderForm.UpdateClients" name="RussianCosmeticApp.NewOrderForm.UpdateClients">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,213,81"/>
+<area shape="rect" id="Node000002" href="$d3/d14/class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b.html#a52fccdaafb8e41be610425a34211e8dc" title=" " alt="" coords="261,39,459,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,57,245,57,245,63,213,63"/>
+<area shape="rect" id="Node000003" href="$d9/dce/class_russian_cosmetic_app_1_1db_1_1_d_b_utils.html#afd3eb73b91a83ceb13caba36851665a2" title="Статический метод для подключение к базе данных" alt="" coords="507,5,723,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="459,44,491,40,492,45,460,50"/>
+<area shape="rect" id="Node000004" href="$d3/d14/class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b.html#a5e25bfe817dbc1413cd77103eae670c2" title=" " alt="" coords="516,72,714,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="460,70,501,76,501,81,459,76"/>
+</map>

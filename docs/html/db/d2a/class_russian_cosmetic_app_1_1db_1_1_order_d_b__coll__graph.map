@@ -1,0 +1,7 @@
+<map id="RussianCosmeticApp.db.OrderDB" name="RussianCosmeticApp.db.OrderDB">
+<area shape="rect" id="Node000001" title="Класс модели данных для заказа с привязкой к базе данных" alt="" coords="5,188,224,215"/>
+<area shape="rect" id="Node000002" href="$d5/d25/class_russian_cosmetic_app_1_1_models_1_1_order_model.html" title="Класс модели данных для заказа" alt="" coords="70,112,159,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,154,117,188,112,188,112,154"/>
+<area shape="rect" id="Node000003" href="$da/d1a/class_russian_cosmetic_app_1_1_models_1_1_status_model.html" title="Класс модели данных для статуса заказа" alt="" coords="16,5,213,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,64,117,112,112,112,112,64"/>
+</map>

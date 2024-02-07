@@ -1,0 +1,151 @@
+\doxysection{Класс Russian\+Cosmetic\+App.\+db.\+Order\+DB}
+\hypertarget{class_russian_cosmetic_app_1_1db_1_1_order_d_b}{}\label{class_russian_cosmetic_app_1_1db_1_1_order_d_b}\index{RussianCosmeticApp.db.OrderDB@{RussianCosmeticApp.db.OrderDB}}
+
+
+Класс модели данных для заказа с привязкой к базе данных  
+
+
+
+
+Граф наследования\+:Russian\+Cosmetic\+App.\+db.\+Order\+DB\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{df/de7/class_russian_cosmetic_app_1_1db_1_1_order_d_b__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Russian\+Cosmetic\+App.\+db.\+Order\+DB\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{db/d2a/class_russian_cosmetic_app_1_1db_1_1_order_d_b__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_russian_cosmetic_app_1_1db_1_1_order_d_b_a8363eb25919a17b056161b2a069ecd67}{Order\+DB}} (int id, Date\+Time? data\+Create, \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_status_model}{Status\+Model}} status, float? \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model_ab9cd107935a3498ff6ab14c98a68a10a}{duration}}, bool removed=false)
+\begin{DoxyCompactList}\small\item\em Конструктор объекта класса Order\+DB \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model}{Russian\+Cosmetic\+App.\+Models.\+Order\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model_a26386f2c3d2bf431c450279889818e00}{Order\+Model}} (int id, Date\+Time data\+Create, \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_status_model}{Status\+Model}} status, float? \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model_ab9cd107935a3498ff6ab14c98a68a10a}{duration}}, bool removed=false)
+\begin{DoxyCompactList}\small\item\em Конструктор объекта класса Order\+Model \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model_ac7b42c40e4a2040b596972549c512f46}{Add\+Service}} (\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model}{Service\+Model}} service)
+\begin{DoxyCompactList}\small\item\em Добавляет услугу в заказ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model_a2ad548b233839fc7fe0d324958a5e383}{Remove\+Service}} (\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model}{Service\+Model}} service)
+\begin{DoxyCompactList}\small\item\em Удаляет услугу из заказа \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_russian_cosmetic_app_1_1db_1_1_order_d_b_ae11a242af2aa04b6b165b0c941138f25}{Get\+New\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает следующий ID для нового заказа \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model}{Order\+Model}} \mbox{\hyperlink{class_russian_cosmetic_app_1_1db_1_1_order_d_b_a6dee769c6d71734eabd5bd89452e6524}{Get\+By\+ID}} (int id)
+\begin{DoxyCompactList}\small\item\em Поиск заказа по ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Дополнительные унаследованные члены}
+\doxysubsection*{Защищенные данные унаследованные от \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model}{Russian\+Cosmetic\+App.\+Models.\+Order\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \+\_\+id}
+\begin{DoxyCompactList}\small\item\em ID заказа \end{DoxyCompactList}\item 
+Date\+Time {\bfseries \+\_\+data\+Create}
+\begin{DoxyCompactList}\small\item\em Дата и время создания заказа \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_status_model}{Status\+Model}} {\bfseries \+\_\+status}
+\begin{DoxyCompactList}\small\item\em Стаус заказа \end{DoxyCompactList}\item 
+float? \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model_ab230f6b04dfba40749ddb4a70b0c63a5}{\+\_\+duration}}
+\begin{DoxyCompactList}\small\item\em Длительность заказа \end{DoxyCompactList}\item 
+bool {\bfseries \+\_\+removed}
+\begin{DoxyCompactList}\small\item\em Удален ли заказ \end{DoxyCompactList}\item 
+Hash\+Set$<$ \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_service_model}{Service\+Model}} $>$ {\bfseries \+\_\+services}
+\begin{DoxyCompactList}\small\item\em Множество услуг в заказе \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Свойства унаследованные от \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model}{Russian\+Cosmetic\+App.\+Models.\+Order\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model_ab9cd107935a3498ff6ab14c98a68a10a}{duration}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Возвращает суммарную длительность заказа \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model_ad7cdeba1d3ed25b8d83add4961018235}{price}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Возвращает суммарную стоимость заказа \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс модели данных для заказа с привязкой к базе данных 
+
+\begin{DoxySeeAlso}{См. также}
+\doxylink{class_russian_cosmetic_app_1_1_models_1_1_order_model}{Russian\+Cosmetic\+App.\+Models.\+Order\+Model}
+
+
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_russian_cosmetic_app_1_1db_1_1_order_d_b_a8363eb25919a17b056161b2a069ecd67}\label{class_russian_cosmetic_app_1_1db_1_1_order_d_b_a8363eb25919a17b056161b2a069ecd67} 
+\index{RussianCosmeticApp.db.OrderDB@{RussianCosmeticApp.db.OrderDB}!OrderDB@{OrderDB}}
+\index{OrderDB@{OrderDB}!RussianCosmeticApp.db.OrderDB@{RussianCosmeticApp.db.OrderDB}}
+\doxysubsubsection{\texorpdfstring{OrderDB()}{OrderDB()}}
+{\footnotesize\ttfamily Russian\+Cosmetic\+App.\+db.\+Order\+DB.\+Order\+DB (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{Date\+Time?}]{data\+Create,  }\item[{\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_status_model}{Status\+Model}}}]{status,  }\item[{float?}]{duration,  }\item[{bool}]{removed = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Конструктор объекта класса Order\+DB 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & ID заказа\\
+\hline
+{\em data\+Create} & Дата и время создания заказа. Если {\ttfamily null}, то будет установлено текущее время при сохранении в базу данных\\
+\hline
+{\em status} & Стаус заказа\\
+\hline
+{\em duration} & Длительность заказа. {\ttfamily null} если длительность неизвестна\\
+\hline
+{\em removed} & Удален ли заказ\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_russian_cosmetic_app_1_1db_1_1_order_d_b_a6dee769c6d71734eabd5bd89452e6524}\label{class_russian_cosmetic_app_1_1db_1_1_order_d_b_a6dee769c6d71734eabd5bd89452e6524} 
+\index{RussianCosmeticApp.db.OrderDB@{RussianCosmeticApp.db.OrderDB}!GetByID@{GetByID}}
+\index{GetByID@{GetByID}!RussianCosmeticApp.db.OrderDB@{RussianCosmeticApp.db.OrderDB}}
+\doxysubsubsection{\texorpdfstring{GetByID()}{GetByID()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_order_model}{Order\+Model}} Russian\+Cosmetic\+App.\+db.\+Order\+DB.\+Get\+By\+ID (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Поиск заказа по ID. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & ID заказа\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Заказ с заданным ID. Если заказ не найден, то возвращается {\ttfamily null} 
+\end{DoxyReturn}
+\Hypertarget{class_russian_cosmetic_app_1_1db_1_1_order_d_b_ae11a242af2aa04b6b165b0c941138f25}\label{class_russian_cosmetic_app_1_1db_1_1_order_d_b_ae11a242af2aa04b6b165b0c941138f25} 
+\index{RussianCosmeticApp.db.OrderDB@{RussianCosmeticApp.db.OrderDB}!GetNewId@{GetNewId}}
+\index{GetNewId@{GetNewId}!RussianCosmeticApp.db.OrderDB@{RussianCosmeticApp.db.OrderDB}}
+\doxysubsubsection{\texorpdfstring{GetNewId()}{GetNewId()}}
+{\footnotesize\ttfamily static int Russian\+Cosmetic\+App.\+db.\+Order\+DB.\+Get\+New\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Возвращает следующий ID для нового заказа 
+
+\begin{DoxyReturn}{Возвращает}
+Следующий ID для нового заказа
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d6c/class_russian_cosmetic_app_1_1db_1_1_order_d_b_ae11a242af2aa04b6b165b0c941138f25_cgraph}
+\end{center}
+\end{figure}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Anastasiya/source/repos/\+Russian\+Cosmetic\+App/db/Order\+DB.\+cs\end{DoxyCompactItemize}

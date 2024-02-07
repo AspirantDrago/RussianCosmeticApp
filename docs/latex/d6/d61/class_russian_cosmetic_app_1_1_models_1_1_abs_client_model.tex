@@ -1,0 +1,143 @@
+\doxysection{Класс Russian\+Cosmetic\+App.\+Models.\+Abs\+Client\+Model}
+\hypertarget{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model}{}\label{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model}\index{RussianCosmeticApp.Models.AbsClientModel@{RussianCosmeticApp.Models.AbsClientModel}}
+
+
+Абстрактный класс модели данных для абстрактного клиента  
+
+
+
+
+Граф наследования\+:Russian\+Cosmetic\+App.\+Models.\+Abs\+Client\+Model\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{d4/df1/class_russian_cosmetic_app_1_1_models_1_1_abs_client_model__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a9107ae80cff62297ce643e34a8c1bb2d}{Abs\+Client\+Model}} (int? id, string email, string password)
+\begin{DoxyCompactList}\small\item\em Конструктор класса Abs\+Client\+Model \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_ab5f2b045cc200f30c51b58dc9b693181}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Конвертирует объект в строку \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_ab789b26aec17cc7cc2b9c2371d3e41be}{Get\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает информацию о клиенте в виде сниппета \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a893647a733e4a70c30ea8eb71aa3e30b}{Get\+Hash\+Password}} (string password)
+\begin{DoxyCompactList}\small\item\em Вычисляет хэш пароля по алгоритму, заданному в поле hash \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a9e7f006385bd8d9be2dbaa996054650d}\label{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a9e7f006385bd8d9be2dbaa996054650d} 
+int? {\bfseries \+\_\+id}
+\begin{DoxyCompactList}\small\item\em ID клиента \end{DoxyCompactList}\item 
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a1fdfdfc7d4c1d0a0ff2e0893a8cbcf9f}\label{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a1fdfdfc7d4c1d0a0ff2e0893a8cbcf9f} 
+string {\bfseries \+\_\+email}
+\begin{DoxyCompactList}\small\item\em Адрес электронной почты клиента \end{DoxyCompactList}\item 
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a24883b71b181fe4ac3a548fd8a431417}\label{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a24883b71b181fe4ac3a548fd8a431417} 
+string {\bfseries \+\_\+password}
+\begin{DoxyCompactList}\small\item\em Хэш пароля клиента \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Статические защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a57ba91e31488b78f933275dd6ab63b33}\label{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a57ba91e31488b78f933275dd6ab63b33} 
+static Hash\+Algorithm {\bfseries hash} = SHA256.\+Create()
+\begin{DoxyCompactList}\small\item\em Статический объект класса System.\+Security.\+Cryptography.\+Hash\+Algorithm для хэширования паролей \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Свойства}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a38a553ab566f24683bf54bc802444f91}{Email}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Возвращает адрес электронной почты клиента \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Абстрактный класс модели данных для абстрактного клиента 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a9107ae80cff62297ce643e34a8c1bb2d}\label{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a9107ae80cff62297ce643e34a8c1bb2d} 
+\index{RussianCosmeticApp.Models.AbsClientModel@{RussianCosmeticApp.Models.AbsClientModel}!AbsClientModel@{AbsClientModel}}
+\index{AbsClientModel@{AbsClientModel}!RussianCosmeticApp.Models.AbsClientModel@{RussianCosmeticApp.Models.AbsClientModel}}
+\doxysubsubsection{\texorpdfstring{AbsClientModel()}{AbsClientModel()}}
+{\footnotesize\ttfamily Russian\+Cosmetic\+App.\+Models.\+Abs\+Client\+Model.\+Abs\+Client\+Model (\begin{DoxyParamCaption}\item[{int?}]{id,  }\item[{string}]{email,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса Abs\+Client\+Model 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & ID клиента\\
+\hline
+{\em email} & Адрес электронной почты клиента\\
+\hline
+{\em password} & Хэш пароля клиента\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a893647a733e4a70c30ea8eb71aa3e30b}\label{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a893647a733e4a70c30ea8eb71aa3e30b} 
+\index{RussianCosmeticApp.Models.AbsClientModel@{RussianCosmeticApp.Models.AbsClientModel}!GetHashPassword@{GetHashPassword}}
+\index{GetHashPassword@{GetHashPassword}!RussianCosmeticApp.Models.AbsClientModel@{RussianCosmeticApp.Models.AbsClientModel}}
+\doxysubsubsection{\texorpdfstring{GetHashPassword()}{GetHashPassword()}}
+{\footnotesize\ttfamily static string Russian\+Cosmetic\+App.\+Models.\+Abs\+Client\+Model.\+Get\+Hash\+Password (\begin{DoxyParamCaption}\item[{string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Вычисляет хэш пароля по алгоритму, заданному в поле hash 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em password} & Оригинальный пароль клиента\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Хэш пароля клиента
+\end{DoxyReturn}
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_ab789b26aec17cc7cc2b9c2371d3e41be}\label{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_ab789b26aec17cc7cc2b9c2371d3e41be} 
+\index{RussianCosmeticApp.Models.AbsClientModel@{RussianCosmeticApp.Models.AbsClientModel}!GetInfo@{GetInfo}}
+\index{GetInfo@{GetInfo}!RussianCosmeticApp.Models.AbsClientModel@{RussianCosmeticApp.Models.AbsClientModel}}
+\doxysubsubsection{\texorpdfstring{GetInfo()}{GetInfo()}}
+{\footnotesize\ttfamily string Russian\+Cosmetic\+App.\+Models.\+Abs\+Client\+Model.\+Get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Возвращает информацию о клиенте в виде сниппета 
+
+\begin{DoxyReturn}{Возвращает}
+Информация о клиенте в формате сниппета 
+\end{DoxyReturn}
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_ab5f2b045cc200f30c51b58dc9b693181}\label{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_ab5f2b045cc200f30c51b58dc9b693181} 
+\index{RussianCosmeticApp.Models.AbsClientModel@{RussianCosmeticApp.Models.AbsClientModel}!ToString@{ToString}}
+\index{ToString@{ToString}!RussianCosmeticApp.Models.AbsClientModel@{RussianCosmeticApp.Models.AbsClientModel}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Russian\+Cosmetic\+App.\+Models.\+Abs\+Client\+Model.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Конвертирует объект в строку 
+
+\begin{DoxyReturn}{Возвращает}
+System.\+String -\/ строковое представление объекта 
+\end{DoxyReturn}
+
+
+\doxysubsection{Полный список свойств}
+\Hypertarget{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a38a553ab566f24683bf54bc802444f91}\label{class_russian_cosmetic_app_1_1_models_1_1_abs_client_model_a38a553ab566f24683bf54bc802444f91} 
+\index{RussianCosmeticApp.Models.AbsClientModel@{RussianCosmeticApp.Models.AbsClientModel}!Email@{Email}}
+\index{Email@{Email}!RussianCosmeticApp.Models.AbsClientModel@{RussianCosmeticApp.Models.AbsClientModel}}
+\doxysubsubsection{\texorpdfstring{Email}{Email}}
+{\footnotesize\ttfamily string Russian\+Cosmetic\+App.\+Models.\+Abs\+Client\+Model.\+Email\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Возвращает адрес электронной почты клиента 
+
+Адрес электронной почты клиента 
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Anastasiya/source/repos/\+Russian\+Cosmetic\+App/\+Models/Abs\+Client\+Model.\+cs\end{DoxyCompactItemize}

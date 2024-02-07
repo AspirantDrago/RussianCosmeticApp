@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RussianCosmeticApp</name>
+    </assembly>
+    <members>
+        <member name="T:RussianCosmeticApp.db.DBUtils">
+            <summary>
+            Служебный класс для работы с базой данных
+            </summary>
+        </member>
+        <member name="F:RussianCosmeticApp.db.DBUtils.connection">
+            <summary>
+            Объект <c>MySqlConnection</c> подключения к базе данных
+            </summary>
+        </member>
+        <member name="F:RussianCosmeticApp.db.DBUtils.databaseName">
+            <summary>
+            Имя базы данных
+            </summary>
+        </member>
+        <member name="F:RussianCosmeticApp.db.DBUtils.host">
+            <summary>
+            Сервер базы данных
+            </summary>
+        </member>
+        <member name="F:RussianCosmeticApp.db.DBUtils.port">
+            <summary>
+            Порт базы данных
+            </summary>
+        </member>
+        <member name="F:RussianCosmeticApp.db.DBUtils.userName">
+            <summary>
+            Имя пользователя базы данных
+            </summary>
+        </member>
+        <member name="F:RussianCosmeticApp.db.DBUtils.userPassword">
+            <summary>
+            Пароль пользователя базы данных
+            </summary>
+        </member>
+        <member name="M:RussianCosmeticApp.db.DBUtils.GetDBConnection">
+            <summary>
+            Статический метод для подключение к базе данных
+            </summary>
+            <returns>Объект подключения к базе данных класса <c>SqlConnection</c></returns>
+        </member>
+        <member name="F:RussianCosmeticApp.Forms.NewPhysClientForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:RussianCosmeticApp.Forms.NewPhysClientForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:RussianCosmeticApp.Forms.NewPhysClientForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:RussianCosmeticApp.NewOrderForm.components">
+            <summary>
+            Обязательная переменная конструктора.
+            </summary>
+        </member>
+        <member name="M:RussianCosmeticApp.NewOrderForm.Dispose(System.Boolean)">
+            <summary>
+            Освободить все используемые ресурсы.
+            </summary>
+            <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        </member>
+        <member name="M:RussianCosmeticApp.NewOrderForm.InitializeComponent">
+            <summary>
+            Требуемый метод для поддержки конструктора — не изменяйте 
+            содержимое этого метода с помощью редактора кода.
+            </summary>
+        </member>
+        <member name="M:RussianCosmeticApp.Program.Main">
+            <summary>
+            Главная точка входа для приложения.
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.russian_cosmeticDataSet">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.russian_cosmeticDataSet.ordersDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.russian_cosmeticDataSet.servicesDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.russian_cosmeticDataSet.statusesDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.russian_cosmeticDataSet.ordersRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.russian_cosmeticDataSet.servicesRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.russian_cosmeticDataSet.statusesRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.russian_cosmeticDataSet.ordersRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.russian_cosmeticDataSet.servicesRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.russian_cosmeticDataSet.statusesRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.russian_cosmeticDataSetTableAdapters.ordersTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.russian_cosmeticDataSetTableAdapters.servicesTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.russian_cosmeticDataSetTableAdapters.statusesTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.russian_cosmeticDataSetTableAdapters.TableAdapterManager">
+             <summary>
+            TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+            </summary>
+        </member>
+        <member name="M:RussianCosmeticApp.russian_cosmeticDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(RussianCosmeticApp.russian_cosmeticDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Update rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:RussianCosmeticApp.russian_cosmeticDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(RussianCosmeticApp.russian_cosmeticDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Insert rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:RussianCosmeticApp.russian_cosmeticDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(RussianCosmeticApp.russian_cosmeticDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Delete rows in bottom-up order.
+            </summary>
+        </member>
+        <member name="M:RussianCosmeticApp.russian_cosmeticDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+            </summary>
+        </member>
+        <member name="M:RussianCosmeticApp.russian_cosmeticDataSetTableAdapters.TableAdapterManager.UpdateAll(RussianCosmeticApp.russian_cosmeticDataSet)">
+             <summary>
+            Update all changes to the dataset.
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.russian_cosmeticDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+             <summary>
+            Update Order Option
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.russian_cosmeticDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+             <summary>
+            Used to sort self-referenced table's rows
+            </summary>
+        </member>
+        <member name="T:RussianCosmeticApp.Sources.ServiceSource">
+            <summary>
+            Класс для отображения услуги в форме создания заказа    
+            </summary>
+        </member>
+        <member name="F:RussianCosmeticApp.Sources.ServiceSource._service">
+            <summary>
+            Объект услуги класса <c>ServiceModel</c>
+            </summary>
+        </member>
+        <member name="F:RussianCosmeticApp.Sources.ServiceSource._selected">
+            <summary>
+            Выбрана ли услуга
+            </summary>
+        </member>
+        <member name="F:RussianCosmeticApp.Sources.ServiceSource._form">
+            <summary>
+            Ссылка на форму создания заказа
+            </summary>
+        </member>
+        <member name="P:RussianCosmeticApp.Sources.ServiceSource.selected">
+            <summary>
+            Вовзращает или устанавливает значение, выбрана ли услуга <see cref="T:RussianCosmeticApp.Sources.ServiceSource"/>
+            </summary>
+            <value>
+              <c>true</c> если услуга выбрана, иначе <c>false</c>.
+            </value>
+        </member>
+        <member name="P:RussianCosmeticApp.Sources.ServiceSource.title">
+            <summary>
+            Возвращает название услуги <see cref="T:RussianCosmeticApp.Sources.ServiceSource"/>
+            </summary>
+            <value>
+            Название услуги
+            </value>
+        </member>
+        <member name="P:RussianCosmeticApp.Sources.ServiceSource.price">
+            <summary>
+            Возвращает цену услуги <see cref="T:RussianCosmeticApp.Sources.ServiceSource"/>
+            </summary>
+            <value>
+            Цена услуги
+            </value>
+        </member>
+        <member name="P:RussianCosmeticApp.Sources.ServiceSource.duration">
+            <summary>
+            Возвращает длительность услуги <see cref="T:RussianCosmeticApp.Sources.ServiceSource"/>
+            </summary>
+            <value>
+            Длительность услуги
+            </value>
+        </member>
+        <member name="T:RussianCosmeticApp.Properties.Resources">
+            <summary>
+              Класс ресурсов со строгим типом для поиска локализованных строк и пр.
+            </summary>
+        </member>
+        <member name="P:RussianCosmeticApp.Properties.Resources.ResourceManager">
+            <summary>
+              Возврат кэшированного экземпляра ResourceManager, используемого этим классом.
+            </summary>
+        </member>
+        <member name="P:RussianCosmeticApp.Properties.Resources.Culture">
+            <summary>
+              Переопределяет свойство CurrentUICulture текущего потока для всех
+              подстановки ресурсов с помощью этого класса ресурсов со строгим типом.
+            </summary>
+        </member>
+    </members>
+</doc>

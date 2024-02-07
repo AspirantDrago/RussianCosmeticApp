@@ -1,0 +1,5 @@
+<map id="RussianCosmeticApp.db.PhysClientDB.Insert" name="RussianCosmeticApp.db.PhysClientDB.Insert">
+<area shape="rect" id="Node000001" title="Добавление клиента в базу данных" alt="" coords="5,5,204,48"/>
+<area shape="rect" id="Node000002" href="$d9/dce/class_russian_cosmetic_app_1_1db_1_1_d_b_utils.html#afd3eb73b91a83ceb13caba36851665a2" title="Статический метод для подключение к базе данных" alt="" coords="252,5,468,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,24,236,24,236,29,204,29"/>
+</map>

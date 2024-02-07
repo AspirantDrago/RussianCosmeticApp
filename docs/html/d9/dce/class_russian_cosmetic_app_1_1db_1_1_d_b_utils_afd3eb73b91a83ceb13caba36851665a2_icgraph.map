@@ -1,0 +1,17 @@
+<map id="RussianCosmeticApp.db.DBUtils.GetDBConnection" name="RussianCosmeticApp.db.DBUtils.GetDBConnection">
+<area shape="rect" id="Node000001" title="Статический метод для подключение к базе данных" alt="" coords="510,172,726,215"/>
+<area shape="rect" id="Node000002" href="$d3/d14/class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b.html#a52fccdaafb8e41be610425a34211e8dc" title="Получение всех клиентов &#45; физических лиц из базы данных" alt="" coords="258,5,456,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="585,163,530,111,496,85,461,62,437,51,439,46,463,58,499,81,533,107,588,159"/>
+<area shape="rect" id="Node000003" href="$dc/d27/class_russian_cosmetic_app_1_1db_1_1_service_d_b.html#ad7b8bebd334cfb5436071dc7583fcffe" title="Возвращает все услуги из базы данных" alt="" coords="252,72,462,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="554,168,461,129,429,118,430,113,463,124,556,163"/>
+<area shape="rect" id="Node000004" href="$dd/db3/class_russian_cosmetic_app_1_1db_1_1_status_d_b.html#af1b5ec24a109a311abacadd3add20d78" title="Возвращает все статусы заказа из базы данных" alt="" coords="254,139,460,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="494,180,460,176,461,171,495,175"/>
+<area shape="rect" id="Node000005" href="$dd/db3/class_russian_cosmetic_app_1_1db_1_1_status_d_b.html#a26c5108e12845e7169793a64ac70ed41" title="Поиск статуса заказа по ID статуса заказа" alt="" coords="254,205,460,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="495,212,461,216,460,211,494,206"/>
+<area shape="rect" id="Node000006" href="$d4/d6c/class_russian_cosmetic_app_1_1db_1_1_order_d_b.html#ae11a242af2aa04b6b165b0c941138f25" title="Возвращает следующий ID для нового заказа" alt="" coords="257,272,457,315"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="556,224,463,262,430,274,429,269,461,258,554,219"/>
+<area shape="rect" id="Node000007" href="$d3/d14/class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b.html#ab44a18eccebd36dea00288a436448fca" title="Добавление клиента в базу данных" alt="" coords="258,339,456,381"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="588,228,533,279,499,306,463,329,439,341,437,336,461,324,496,302,530,275,585,224"/>
+<area shape="rect" id="Node000008" href="$d3/d14/class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b.html#a78a4487b6ad83d52c5d3d1516a3e39a3" title="Сохранение клиента в базе данных (добавление или обновление)" alt="" coords="5,339,204,381"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="242,363,204,363,204,357,242,357"/>
+</map>

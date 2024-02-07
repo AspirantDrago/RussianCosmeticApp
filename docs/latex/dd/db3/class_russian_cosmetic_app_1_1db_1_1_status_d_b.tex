@@ -1,0 +1,135 @@
+\doxysection{Класс Russian\+Cosmetic\+App.\+db.\+Status\+DB}
+\hypertarget{class_russian_cosmetic_app_1_1db_1_1_status_d_b}{}\label{class_russian_cosmetic_app_1_1db_1_1_status_d_b}\index{RussianCosmeticApp.db.StatusDB@{RussianCosmeticApp.db.StatusDB}}
+
+
+Класс модели данных для статуса заказа с привязкой к базе данных  
+
+
+
+
+Граф наследования\+:Russian\+Cosmetic\+App.\+db.\+Status\+DB\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{de/dc2/class_russian_cosmetic_app_1_1db_1_1_status_d_b__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Russian\+Cosmetic\+App.\+db.\+Status\+DB\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{d0/dcd/class_russian_cosmetic_app_1_1db_1_1_status_d_b__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_russian_cosmetic_app_1_1db_1_1_status_d_b_a7e198d4fe0572dbffa40c3bca3d88304}{Status\+DB}} (int id, string title)
+\begin{DoxyCompactList}\small\item\em Конструктор класса Status\+DB \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_status_model}{Russian\+Cosmetic\+App.\+Models.\+Status\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_status_model_a5aef317ee405dc0c973417af2f780066}{Status\+Model}} (int id, string title)
+\begin{DoxyCompactList}\small\item\em Конструктор класса Status\+Model \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_status_model_a6f36aadb58f1aa77d6a86f6d3a92f4eb}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Конвертирует объект в строку \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_status_model}{Status\+Model}} $>$ \mbox{\hyperlink{class_russian_cosmetic_app_1_1db_1_1_status_d_b_af1b5ec24a109a311abacadd3add20d78}{Get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает все статусы заказа из базы данных \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_status_model}{Status\+Model}} \mbox{\hyperlink{class_russian_cosmetic_app_1_1db_1_1_status_d_b_a26c5108e12845e7169793a64ac70ed41}{Get\+By\+ID}} (int id)
+\begin{DoxyCompactList}\small\item\em Поиск статуса заказа по ID статуса заказа \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Дополнительные унаследованные члены}
+\doxysubsection*{Защищенные данные унаследованные от \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_status_model}{Russian\+Cosmetic\+App.\+Models.\+Status\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \+\_\+id}
+\begin{DoxyCompactList}\small\item\em ID статуса заказа \end{DoxyCompactList}\item 
+string {\bfseries \+\_\+title}
+\begin{DoxyCompactList}\small\item\em Название статуса заказа \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс модели данных для статуса заказа с привязкой к базе данных 
+
+\begin{DoxySeeAlso}{См. также}
+\doxylink{class_russian_cosmetic_app_1_1_models_1_1_status_model}{Russian\+Cosmetic\+App.\+Models.\+Status\+Model}
+
+
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_russian_cosmetic_app_1_1db_1_1_status_d_b_a7e198d4fe0572dbffa40c3bca3d88304}\label{class_russian_cosmetic_app_1_1db_1_1_status_d_b_a7e198d4fe0572dbffa40c3bca3d88304} 
+\index{RussianCosmeticApp.db.StatusDB@{RussianCosmeticApp.db.StatusDB}!StatusDB@{StatusDB}}
+\index{StatusDB@{StatusDB}!RussianCosmeticApp.db.StatusDB@{RussianCosmeticApp.db.StatusDB}}
+\doxysubsubsection{\texorpdfstring{StatusDB()}{StatusDB()}}
+{\footnotesize\ttfamily Russian\+Cosmetic\+App.\+db.\+Status\+DB.\+Status\+DB (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{title }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса Status\+DB 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & ID статуса заказа\\
+\hline
+{\em title} & Название статуса заказа\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_russian_cosmetic_app_1_1db_1_1_status_d_b_af1b5ec24a109a311abacadd3add20d78}\label{class_russian_cosmetic_app_1_1db_1_1_status_d_b_af1b5ec24a109a311abacadd3add20d78} 
+\index{RussianCosmeticApp.db.StatusDB@{RussianCosmeticApp.db.StatusDB}!GetAll@{GetAll}}
+\index{GetAll@{GetAll}!RussianCosmeticApp.db.StatusDB@{RussianCosmeticApp.db.StatusDB}}
+\doxysubsubsection{\texorpdfstring{GetAll()}{GetAll()}}
+{\footnotesize\ttfamily static List$<$ \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_status_model}{Status\+Model}} $>$ Russian\+Cosmetic\+App.\+db.\+Status\+DB.\+Get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Возвращает все статусы заказа из базы данных 
+
+\begin{DoxyReturn}{Возвращает}
+Список всех статусов заказа из базы данных 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/db3/class_russian_cosmetic_app_1_1db_1_1_status_d_b_af1b5ec24a109a311abacadd3add20d78_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_russian_cosmetic_app_1_1db_1_1_status_d_b_a26c5108e12845e7169793a64ac70ed41}\label{class_russian_cosmetic_app_1_1db_1_1_status_d_b_a26c5108e12845e7169793a64ac70ed41} 
+\index{RussianCosmeticApp.db.StatusDB@{RussianCosmeticApp.db.StatusDB}!GetByID@{GetByID}}
+\index{GetByID@{GetByID}!RussianCosmeticApp.db.StatusDB@{RussianCosmeticApp.db.StatusDB}}
+\doxysubsubsection{\texorpdfstring{GetByID()}{GetByID()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_russian_cosmetic_app_1_1_models_1_1_status_model}{Status\+Model}} Russian\+Cosmetic\+App.\+db.\+Status\+DB.\+Get\+By\+ID (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Поиск статуса заказа по ID статуса заказа 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & ID статуса заказа\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Объект статуса заказа с заданным ID. Если статус заказа не найден, то возвращается {\ttfamily null} 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/db3/class_russian_cosmetic_app_1_1db_1_1_status_d_b_a26c5108e12845e7169793a64ac70ed41_cgraph}
+\end{center}
+\end{figure}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Anastasiya/source/repos/\+Russian\+Cosmetic\+App/db/Status\+DB.\+cs\end{DoxyCompactItemize}

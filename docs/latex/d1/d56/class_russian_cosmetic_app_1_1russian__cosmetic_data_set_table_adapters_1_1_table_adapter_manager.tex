@@ -1,0 +1,71 @@
+\doxysection{Класс Russian\+Cosmetic\+App.\+russian\+\_\+cosmetic\+Data\+Set\+Table\+Adapters.\+Table\+Adapter\+Manager}
+\hypertarget{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager}{}\label{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager}\index{RussianCosmeticApp.russian\_cosmeticDataSetTableAdapters.TableAdapterManager@{RussianCosmeticApp.russian\_cosmeticDataSetTableAdapters.TableAdapterManager}}
+
+
+Table\+Adapter\+Manager is used to coordinate Table\+Adapters in the dataset to enable Hierarchical Update scenarios /summary\texorpdfstring{$>$}{>}  
+
+
+
+
+Граф наследования\+:Russian\+Cosmetic\+App.\+russian\+\_\+cosmetic\+Data\+Set\+Table\+Adapters.\+Table\+Adapter\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{d7/d65/class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Russian\+Cosmetic\+App.\+russian\+\_\+cosmetic\+Data\+Set\+Table\+Adapters.\+Table\+Adapter\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{da/d40/class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_aa13ac9272efbeff50bc39d8a5f0a6f41}\label{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_aa13ac9272efbeff50bc39d8a5f0a6f41} 
+enum \mbox{\hyperlink{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_aa13ac9272efbeff50bc39d8a5f0a6f41}{Update\+Order\+Option}} \{ {\bfseries Insert\+Update\+Delete} = 0
+, {\bfseries Update\+Insert\+Delete} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Update Order Option /summary\texorpdfstring{$>$}{>} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_a1ae89e353ee7275479c3ba01814e13bc}\label{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_a1ae89e353ee7275479c3ba01814e13bc} 
+virtual int {\bfseries Update\+All} (\mbox{\hyperlink{class_russian_cosmetic_app_1_1russian__cosmetic_data_set}{russian\+\_\+cosmetic\+Data\+Set}} data\+Set)
+\begin{DoxyCompactList}\small\item\em Update all changes to the dataset. /summary\texorpdfstring{$>$}{>} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_ac2851ab749854395800a974b9e2d94f2}\label{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_ac2851ab749854395800a974b9e2d94f2} 
+virtual void {\bfseries Sort\+Self\+Reference\+Rows} (global\+::\+System.\+Data.\+Data\+Row\mbox{[}$\,$\mbox{]} rows, global\+::\+System.\+Data.\+Data\+Relation relation, bool child\+First)
+\item 
+\Hypertarget{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_ae51eef41dbac09c6b6319b8460e2eded}\label{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_ae51eef41dbac09c6b6319b8460e2eded} 
+virtual bool {\bfseries Match\+Table\+Adapter\+Connection} (global\+::\+System.\+Data.\+IDb\+Connection input\+Connection)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Свойства}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_a74c709b2e64e88d1e02ce3d77a190df1}\label{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_a74c709b2e64e88d1e02ce3d77a190df1} 
+\mbox{\hyperlink{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_aa13ac9272efbeff50bc39d8a5f0a6f41}{Update\+Order\+Option}} {\bfseries Update\+Order}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_a7dd9a790445efec417cc85ab2956dc7f}\label{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_a7dd9a790445efec417cc85ab2956dc7f} 
+bool {\bfseries Backup\+Data\+Set\+Before\+Update}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_ac8436f46e11c42930a0b2dcdfb527f18}\label{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_ac8436f46e11c42930a0b2dcdfb527f18} 
+global\+::\+System.\+Data.\+IDb\+Connection {\bfseries Connection}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_a795a8ebfb956ea37dae272d1d3e52460}\label{class_russian_cosmetic_app_1_1russian__cosmetic_data_set_table_adapters_1_1_table_adapter_manager_a795a8ebfb956ea37dae272d1d3e52460} 
+int {\bfseries Table\+Adapter\+Instance\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Table\+Adapter\+Manager is used to coordinate Table\+Adapters in the dataset to enable Hierarchical Update scenarios /summary\texorpdfstring{$>$}{>} 
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Anastasiya/source/repos/\+Russian\+Cosmetic\+App/russian\+\_\+cosmetic\+Data\+Set.\+Designer.\+cs\end{DoxyCompactItemize}

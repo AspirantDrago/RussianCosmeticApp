@@ -1,0 +1,9 @@
+<map id="RussianCosmeticApp.db.PhysClientDB.Save" name="RussianCosmeticApp.db.PhysClientDB.Save">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,204,81"/>
+<area shape="rect" id="Node000002" href="$d3/d14/class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b.html#ab44a18eccebd36dea00288a436448fca" title=" " alt="" coords="252,5,450,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,44,236,40,237,45,205,49"/>
+<area shape="rect" id="Node000004" href="$d3/d14/class_russian_cosmetic_app_1_1db_1_1_phys_client_d_b.html#a3901769d10b7bb3c1f210e9b13ecb7e6" title=" " alt="" coords="252,72,450,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="205,71,237,75,236,80,204,76"/>
+<area shape="rect" id="Node000003" href="$d9/dce/class_russian_cosmetic_app_1_1db_1_1_d_b_utils.html#afd3eb73b91a83ceb13caba36851665a2" title="Статический метод для подключение к базе данных" alt="" coords="498,5,714,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="451,24,482,24,482,29,451,29"/>
+</map>

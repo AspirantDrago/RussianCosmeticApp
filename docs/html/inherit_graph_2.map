@@ -1,0 +1,9 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,80,193,107"/>
+<area shape="rect" id="Node000001" href="$dd/d7c/class_russian_cosmetic_app_1_1russian__cosmetic_data_set_1_1orders_row.html" title="Represents strongly named DataRow class. /summary&gt;" alt="" coords="248,5,441,48"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="165,73,262,46,264,51,167,78"/>
+<area shape="rect" id="Node000002" href="$d3/d14/class_russian_cosmetic_app_1_1russian__cosmetic_data_set_1_1services_row.html" title="Represents strongly named DataRow class. /summary&gt;" alt="" coords="242,72,447,115"/>
+<area shape="poly" id="edge8_Node000000_Node000002" title=" " alt="" coords="208,91,242,91,242,96,208,96"/>
+<area shape="rect" id="Node000003" href="$dd/d31/class_russian_cosmetic_app_1_1russian__cosmetic_data_set_1_1statuses_row.html" title="Represents strongly named DataRow class. /summary&gt;" alt="" coords="241,139,448,181"/>
+<area shape="poly" id="edge9_Node000000_Node000003" title=" " alt="" coords="167,109,264,135,262,141,165,114"/>
+</map>

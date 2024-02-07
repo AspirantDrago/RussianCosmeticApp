@@ -1,0 +1,7 @@
+<map id="RussianCosmeticApp.Models.StatusModel.StatusModel" name="RussianCosmeticApp.Models.StatusModel.StatusModel">
+<area shape="rect" id="Node000001" title="Конструктор класса StatusModel" alt="" coords="260,39,456,81"/>
+<area shape="rect" id="Node000002" href="$dd/db3/class_russian_cosmetic_app_1_1db_1_1_status_d_b.html#af1b5ec24a109a311abacadd3add20d78" title="Возвращает все статусы заказа из базы данных" alt="" coords="5,5,212,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,47,212,43,213,38,244,42"/>
+<area shape="rect" id="Node000003" href="$dd/db3/class_russian_cosmetic_app_1_1db_1_1_status_d_b.html#a26c5108e12845e7169793a64ac70ed41" title="Поиск статуса заказа по ID статуса заказа" alt="" coords="5,72,212,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,78,213,82,212,77,244,73"/>
+</map>
