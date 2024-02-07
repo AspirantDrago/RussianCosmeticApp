@@ -6,8 +6,20 @@ using System;
 
 namespace RussianCosmeticApp.db
 {
+    /// <summary>
+    /// Класс модели данных для заказа с привязкой к базе данных
+    /// </summary>
+    /// <seealso cref="RussianCosmeticApp.Models.OrderModel" />
     public class OrderDB : OrderModel
     {
+        /// <summary>
+        /// Конструктор объекта класса <see cref="OrderDB"/>
+        /// </summary>
+        /// <param name="id">ID заказа</param>
+        /// <param name="dataCreate">Дата и время создания заказа. Если <see langword="null"/>, то будет установлено текущее время при сохранении в базу данных</param>
+        /// <param name="status">Стаус заказа</param>
+        /// <param name="duration">Длительность заказа. <see langword="null"/> если длительность неизвестна</param>
+        /// <param name="removed">Удален ли заказ</param>
         public OrderDB(
            int id,
             DateTime? dataCreate,
@@ -19,6 +31,10 @@ namespace RussianCosmeticApp.db
 
         }
 
+        /// <summary>
+        /// Возвращает следующий ID для нового заказа
+        /// </summary>
+        /// <returns>Следующий ID для нового заказа</returns>
         public static int GetNewId()
         {
             MySqlConnection conn = DBUtils.GetDBConnection();
@@ -32,6 +48,14 @@ namespace RussianCosmeticApp.db
             return Convert.ToInt32(result);
         }
 
+        /// <summary>
+        /// Поиск заказа по ID
+        /// </summary>
+        /// <param name="id">ID заказа</param>
+        /// <returns>
+        /// Заказ с заданным ID.
+        /// Если заказ не найден, то возвращается <see langword="null"/>
+        /// </returns>
         public static OrderModel GetByID(int id)
         {
             MySqlConnection conn = DBUtils.GetDBConnection();

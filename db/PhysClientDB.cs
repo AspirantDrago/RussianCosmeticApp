@@ -5,8 +5,25 @@ using System;
 
 namespace RussianCosmeticApp.db
 {
-    class PhysClientDB: PhysClientModel
+    /// <summary>
+    /// Класс модели данных для клиента - физического лица с привязкой к базе данных
+    /// </summary>
+    /// <seealso cref="RussianCosmeticApp.Models.PhysClientModel" />
+    class PhysClientDB : PhysClientModel
     {
+        /// <summary>
+        /// Конструктор класса <see cref="PhysClientDB"/>
+        /// </summary>
+        /// <param name="id">ID клиента</param>
+        /// <param name="email">Адрес электронной почты клиента</param>
+        /// <param name="password">Хэш пароля клиента</param>
+        /// <param name="name">Имя клиента</param>
+        /// <param name="surname">Фамилия клиента</param>
+        /// <param name="patronymic">Отчество клиента</param>
+        /// <param name="birthday">Дата рождения клиента</param>
+        /// <param name="passportSeria">Серия паспорта клиента (4 цифры)</param>
+        /// <param name="passportNumber">Номер паспорта клиента (6 цифр)</param>
+        /// <param name="phone">Номер телефона клиента</param>
         public PhysClientDB(
             int? id,
             string email,
@@ -23,6 +40,12 @@ namespace RussianCosmeticApp.db
 
         }
 
+        /// <summary>
+        /// Получение всех клиентов - физических лиц из базы данных
+        /// </summary>
+        /// <returns>
+        /// Список всех клиентов - физических лиц
+        /// </returns>
         public static List<PhysClientModel> GetAll()
         {
             List<PhysClientModel> clients = new List<PhysClientModel>();
@@ -60,6 +83,9 @@ namespace RussianCosmeticApp.db
             return clients;
         }
 
+        /// <summary>
+        /// Сохранение клиента в базе данных (добавление или обновление)
+        /// </summary>
         public void Save() 
         { 
             if (_id == null)
@@ -72,6 +98,10 @@ namespace RussianCosmeticApp.db
             }
         }
 
+        /// <summary>
+        /// Добавление клиента в базу данных
+        /// </summary>
+        /// <exception cref="System.Exception">Пользователь не был добавлен</exception>
         protected void Insert()
         {
             MySqlConnection conn = DBUtils.GetDBConnection();
@@ -118,6 +148,12 @@ namespace RussianCosmeticApp.db
             }
         }
 
+        /// <summary>
+        /// Изменение данных клиента в базе данных
+        /// </summary>
+        /// <exception cref="System.NotImplementedException">
+        /// Данный метод не реализован
+        /// </exception>
         protected void Update()
         {
             throw new NotImplementedException();

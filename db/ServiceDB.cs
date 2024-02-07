@@ -4,8 +4,20 @@ using MySql.Data.MySqlClient;
 
 namespace RussianCosmeticApp.db
 {
+    /// <summary>
+    /// Класс модели данных для услуги с привязкой к базе данных
+    /// </summary>
+    /// <seealso cref="RussianCosmeticApp.Models.ServiceModel" />
     public class ServiceDB : ServiceModel
     {
+        /// <summary>
+        /// Конструктор класса <see cref="ServiceDB"/>
+        /// </summary>
+        /// <param name="id">ID услуги</param>
+        /// <param name="title">Название услуги</param>
+        /// <param name="price">Цена услуги, рубли</param>
+        /// <param name="duration">Длительность услуги, часы</param>
+        /// <param name="std">Стандартное отклонение результата услуги. По умолчанию <c>0.0</c></param>
         public ServiceDB(
             int id,
             string title,
@@ -16,6 +28,12 @@ namespace RussianCosmeticApp.db
 
         }
 
+        /// <summary>
+        /// Возвращает все услуги из базы данных
+        /// </summary>
+        /// <returns>
+        /// Список всех услуг из базы данных
+        /// </returns>
         public static List<ServiceModel> GetAll()
         {
             List<ServiceModel> services = new List<ServiceModel>();

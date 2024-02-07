@@ -5,8 +5,17 @@ using MySql.Data.MySqlClient;
 
 namespace RussianCosmeticApp.db
 {
+    /// <summary>
+    /// Класс модели данных для статуса заказа с привязкой к базе данных
+    /// </summary>
+    /// <seealso cref="RussianCosmeticApp.Models.StatusModel" />
     public class StatusDB : StatusModel
     {
+        /// <summary>
+        /// Конструктор класса <see cref="StatusDB"/>
+        /// </summary>
+        /// <param name="id">ID статуса заказа</param>
+        /// <param name="title">Название статуса заказа</param>
         public StatusDB(
             int id,
             string title
@@ -14,6 +23,12 @@ namespace RussianCosmeticApp.db
 
         }
 
+        /// <summary>
+        /// Возвращает все статусы заказа из базы данных
+        /// </summary>
+        /// <returns>
+        /// Список всех статусов заказа из базы данных
+        /// </returns>
         public static List<StatusModel> GetAll()
         {
             List<StatusModel> statuses = new List<StatusModel>();
@@ -36,6 +51,14 @@ namespace RussianCosmeticApp.db
             return statuses;
         }
 
+        /// <summary>
+        /// Поиск статуса заказа по ID статуса заказа
+        /// </summary>
+        /// <param name="id">ID статуса заказа</param>
+        /// <returns>
+        /// Объект статуса заказа с заданным ID.
+        /// Если статус заказа не найден, то возвращается <see langword="null"/>
+        /// </returns>
         public static StatusModel GetByID(int id)
         {
             MySqlConnection conn = DBUtils.GetDBConnection();

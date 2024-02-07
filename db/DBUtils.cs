@@ -9,17 +9,35 @@ namespace RussianCosmeticApp.db
     /// </summary>
     public class DBUtils
     {
+        /// <summary>
+        /// Объект <c>MySqlConnection</c> подключения к базе данных
+        /// </summary>
         private static MySqlConnection connection = null;
+        /// <summary>
+        /// Имя базы данных
+        /// </summary>
         public static string databaseName = "russian_cosmetic";
+        /// <summary>
+        /// Сервер базы данных
+        /// </summary>
         public static string host = "127.0.0.1";
+        /// <summary>
+        /// Порт базы данных
+        /// </summary>
         public static int port = 3306;
+        /// <summary>
+        /// Имя пользователя базы данных
+        /// </summary>
         public static string userName = "root";
+        /// <summary>
+        /// Пароль пользователя базы данных
+        /// </summary>
         public static string userPassword = "root";
 
         /// <summary>
         /// Статический метод для подключение к базе данных
         /// </summary>
-        /// <returns>Объект подключения к базе данных класса SqlConnection</returns>
+        /// <returns>Объект подключения к базе данных класса <c>SqlConnection</c></returns>
         public static MySqlConnection GetDBConnection()
         {
             if (connection == null)
